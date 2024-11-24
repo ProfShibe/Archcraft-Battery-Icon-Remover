@@ -4,7 +4,8 @@ Python script that automatically removes the battery icon on the Archcraft Polyb
 Intended for Archcraft users who are on a Desktop, but still see the battery icon on Polybar.
 
 Drop the main.py file in ~/.config/openbox/themes/
-CD in that same directory
+
+CD into that same directory
 
 From here, change the "CONTENT" variable in the "main" function of the file to whatever text you want to replace the battery icon with.
 Then, execute the script by running "python3 main.py", or "python main.py".
