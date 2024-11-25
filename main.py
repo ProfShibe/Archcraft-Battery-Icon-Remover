@@ -52,7 +52,7 @@ def fix_modules_file(folder, _CONTENT):
                         modules.writelines(lines)
                         print(f"Properly modified {file}!\n")
                 else:
-                    print(f"No changes made in {file}. Likely already modified.\n")
+                    print(f"No changes made in {file}. Likely didn't have a battery icon.\n")
 
     except IndexError as error:
         print(f"Something went wrong processing {folder}. {error}")
