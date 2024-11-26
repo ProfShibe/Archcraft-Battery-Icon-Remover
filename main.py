@@ -19,7 +19,7 @@ def find_polybar_folder():
             if dir.iterdir():
                 for item in dir.iterdir():
                     if item.name.lower() == "polybar":
-                       all_themes.append(item) 
+                       all_themes.append(item)
     return all_themes
 ########################################################
 def fix_modules_file(folder, _CONTENT):
@@ -43,16 +43,23 @@ def fix_modules_file(folder, _CONTENT):
 
                         lines[num] = ''
                         lines[num - 2] = f'content = "{_CONTENT}"'
-                        lines[num - 1] = f''
+                        lines[num - 1] = ''
                         lines[num + 1] = f'\n'
                         lines[num + 2] = 'content-background = ${color.BACKGROUND3}'
+                    # For the Gray theme with a vertical icon
+                    elif "content-prefix = 󰂎" in line:
+                        print(f"Changing battery icon at line {num} in file {file}.")
+                        modified = True
+                        lines[num - 2] = f'content = "{_CONTENT}"'
+                        lines[num - 1] = '\n'
+                        lines[num] = 'content-background = ${color.BACKGROUND3}'
 
                 if modified:
                     with open(file, "w") as modules:
                         modules.writelines(lines)
                         print(f"Properly modified {file}!\n")
                 else:
-                    print(f"No changes made in {file}. Likely didn't have a battery icon.\n")
+                    print(f"No changes made in {file}. Likely already modified.\n")
 
     except IndexError as error:
         print(f"Something went wrong processing {folder}. {error}")
