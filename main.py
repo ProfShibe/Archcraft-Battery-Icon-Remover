@@ -53,6 +53,11 @@ def fix_modules_file(folder, _CONTENT):
                         lines[num - 2] = f'content = "{_CONTENT}"'
                         lines[num - 1] = '\n'
                         lines[num] = 'content-background = ${color.BACKGROUND3}'
+                    elif 'content = ""' in line:
+                        modified = True
+                        print(f"Changing battery icon at line {num} in file {file}.")
+                        lines[num - 1] = f'content = "{_CONTENT}"'
+                        lines[num] = f'\n'
 
                 if modified:
                     with open(file, "w") as modules:
