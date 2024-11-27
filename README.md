@@ -16,5 +16,4 @@ You can then change themes. All themes that had a battery icon that was displayi
 
 If you want to change the text it displays as after running it, replace all the newly made files with the backups and run it again.
 
-**Known Bugs: Doesn't work on the "Easy" theme. Can't figure out how the battery icon is displaying on it.
-            Some padding issues on the "Default" theme. Will fix soon.**
+**Known Bugs: "Easy" Theme: Not working. Can't figure out how the battery icon is displaying on it. "Default" theme. Padding issues. Fix soon.**
