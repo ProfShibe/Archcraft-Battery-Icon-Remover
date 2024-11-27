@@ -16,6 +16,6 @@ You can then change themes. All themes that had a battery icon that was displayi
 
 If you want to change the text it displays as after running it, replace all the newly made files with the backups and run it again.
 
-**Known Bugs: 
-"Easy" Theme: Not working. Can't figure out how the battery icon is displaying on it. 
-"Default" theme. Padding issues. Fix soon.**
+**To fix the background color on the "Default" Theme: navigate to .config/openbox/themes/default/polybar/ and replace content-background = ${color.BACKGROUND3} with content-background = ${color.ALTBACKGROUND}**
+
+**Known Bugs: "Easy" Theme: Not working. Can't figure out how the battery icon is displaying on it.**
