@@ -6,7 +6,7 @@ from shutil import copy2  # For backups
 
 def main():
     all_themes = find_polybar_folder()
-    CONTENT = "ProfShibe" # Change this to whatever! It will replace the battery icon on every theme!
+    CONTENT = "Archcraft" # Change this to whatever! It will replace the battery icon on every theme!
 
     for theme in all_themes:
         fix_modules_file(theme, CONTENT)
