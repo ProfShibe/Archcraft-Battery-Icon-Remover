@@ -15,3 +15,6 @@ Then, execute the script by running "python3 main.py", or "python main.py" in a 
 You can then change themes. All themes that had a battery icon that was displaying as N/A for Desktop users will be replaced with your desired text (you can leave it blank if you want nothing there).
 
 If you want to change the text it displays as after running it, replace all the newly made files with the backups and run it again.
+
+Known Bugs: Doesn't work on the "Easy" theme. Can't figure out how the battery icon is displaying on it.
+            Some padding issues on the "Default" theme. Will fix soon.
