@@ -17,4 +17,5 @@ You can then change themes. All themes that had a battery icon that was displayi
 If you want to change the text it displays as after running it, replace all the newly made files with the backups and run it again.
 
 **To fix the background color on the "Default" Theme for Openbox: navigate to ~/.config/openbox/themes/default/polybar/modules.ini and replace content-background = ${color.BACKGROUND3} (should be under your custom text near the top) with content-background = ${color.ALTBACKGROUND}**
+
 **For BSPWM do the same except in the BSPWM directory and change it to content-background = ${color.BACKGROUND} instead**
